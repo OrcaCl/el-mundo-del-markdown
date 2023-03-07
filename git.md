@@ -88,6 +88,40 @@ Aún no sé cuándo ni cómo se pueden ir haciendo "números de versión" o si l
 
 Si no se agrega mensaje, el commit se detiene y tira un mensaje de _abort_
 
+## Ramas y Merge
+
+Branch es el nombre que reciben las variaciones en el multiverso, como lo puso Guillermo. La mejor explicación ñoña ever.
+
+La rama es una copia del master donde se crean nuevas funcionalidades. Si la rama funciona, se puede "unir / merge" a la rama principal. 
+
+Si no funciona o si queda pendiente, se puede pegar después o sino quedar ahi tirada hasta que se decida eliminar o archivar.
+
+Para crear una rama, hacemos:
+
+>git branch -nombre-de-rama
+
+Para ver todas las ramas disponibles:
+
+>git branch
+
+Para salir de una rama y entrar a la otra (forma antigua)
+
+>git checkout -nombre-de-rama-a-cambiarse
+
+Para salir de una rama, crear una nueva y cambiarse a ella, se hace:
+
+>git checkout -b nombre-nueva-rama
+
+Ahora, en el stream vimos como se actualizó el tema de las ramas, y se cambio la palabra `checkout` por `switch`. Siento que tiene más sentido esta última, porque significa "cambiar" en vez de "salir".
+
+>git switch nombre-de-rama-existente
+
+Y también se puede cambiar de rama, crear otra y cambiarse a esa nueva, con el formato nuevo:
+
+>git switch -c nombre-de-nueva-rama
+
+
+
 
 
 
