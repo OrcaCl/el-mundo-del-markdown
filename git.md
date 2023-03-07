@@ -96,21 +96,13 @@ La rama es una copia del master donde se crean nuevas funcionalidades. Si la ram
 
 Si no funciona o si queda pendiente, se puede pegar después o sino quedar ahi tirada hasta que se decida eliminar o archivar.
 
-Para crear una rama, hacemos:
+|paso| comando | resultado|
+|-|-|-|
+|1 | git branch -nombre-rama-nueva | creamos una rama nueva |
+|2| git branch | ver todas las ramas disponibles |
+|3| git checkout -nombre-rama-a-cambiarse | Salir de una rama y entrar a otra antigua (forma vieja)|
+|4| git checkout -b rama-nueva | salir de una rama, crear otra nueva y saltar a esa (forma vieja)|
 
->git branch -nombre-de-rama
-
-Para ver todas las ramas disponibles:
-
->git branch
-
-Para salir de una rama y entrar a la otra (forma antigua)
-
->git checkout -nombre-de-rama-a-cambiarse
-
-Para salir de una rama, crear una nueva y cambiarse a ella, se hace:
-
->git checkout -b nombre-nueva-rama
 
 Ahora, en el stream vimos como se actualizó el tema de las ramas, y se cambio la palabra `checkout` por `switch`. Siento que tiene más sentido esta última, porque significa "cambiar" en vez de "salir".
 
