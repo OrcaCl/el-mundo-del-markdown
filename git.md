@@ -160,6 +160,21 @@ Si me equivoqué al escribir "origin" y puse "origen" o "cafe" o "caca", puedo c
 
 Y esa config se va a borrar y puedo partir otra vez configurando el remoto.
 
+### Eliminar el tracking a un archivo que ya subimos al repo remoto.
+
+Para quitar el tracking a un archivo, en local hay que escribir el siguiente comando:
+
+>git rm --cached file.md
+
+Después hay que hacer el commit para que establezca los cambios
+
+>git commit -m "quitando el track a archivo"
+
+Finalmente hay que agregar a .gitignore para que no lo vuelva a subir.
+
+NOTA: Esto solo cambia las cosas en local. Si ya subimos el archivo al repo remoto, hay que borrarlo allá también.
+
+
 
 
 
