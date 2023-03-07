@@ -48,10 +48,46 @@ Pero por si la cagas, puedes hacer
 >rm -rf .git
 </pre>
 
-Para borrar los archivos de git que pusiste en la carpeta equivocada.
+Para borrar los archivos de git que pusiste en la carpeta equivocada. `Empecemos`
 
-`Empecemos`
+**Working Area**
 
 Vamos a el-mundo-del-markdown.
 >git init
+
+Este comando genera o da inicio a un repositorio local (PC-Offline). Crea un archivo oculto .git y sus carpetas mágicas para el control de versiones.
+
+Si bien no lo mencionó en el video, hay un archivo que se llama .gitignore que permite decirle al motor de GIT que no guarde ciertos documentos o carpetas. Pueden ser trozos de source o node_modules o cosas que no quiero versionar.
+
+**.gitignore**
+
+>touch .gitignore
+
+Después con NaNo o con VS Code agregué linea por línea los archivos/carpetas que no quise subir. En este caso, fueron _site (la prueba que hice con 11ty)
+dillinger_ejemplo.md (el archivo de muestra de Markdown.) entre otros.
+
+Después que dejé esos ignorados, usé git add . para que agregue todos los archivos de el-mundo-del-markdown en el repo de git.
+
+**Staging Area**
+
+>git add .
+
+En VSCode se ve que en el apartado de GIT, los archivos ahora tienen una M = Modificado.
+
+|id|Estado| Descripcion |
+|-|-|-|
+| M | Modificado | Si uso 'gst' o git status voy a ver que están en rojo, modificados |
+| M amarillo | En Staging Area | En 'gst' se ve amarillo, esperando ser ofrecido al 'cliente' con commit |
+
+En el bloque de Git de VS Code se puede ver cuándo un archivo es movido a Staging en el acordeón del panel lateral. Es como una ayuda visual.
+
+**Commit**
+Al hacer commit, todo lo que esté en la zona de preparación o Staging Area, será versionado. Es importante que le agreguemos un mensaje para ir guardando la descripción de los cambios principales y no olvidar qué cosas vamos cambiando.
+
+Aún no sé cuándo ni cómo se pueden ir haciendo "números de versión" o si lo hace automático. Espero poder preguntar después en Discord.
+
+Si no se agrega mensaje, el commit se detiene y tira un mensaje de _abort_
+
+
+
 
