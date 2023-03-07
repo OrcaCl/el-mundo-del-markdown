@@ -150,7 +150,15 @@ Origin es una palabra clave estándar para definir el `origen remoto` de este re
 
 Ahora vamos a hacer el primer push, que es enviar al repo remoto, una copia de nuestro repo local para que tengamos las mismas cosas sincronizadas y listas para seguir trabajando en otro lugar o con otro grupo de personas.
 
+Si uso el comando:
+>git remote -v
 
+Puedo revisar si la config anterior quedó bien hecha.
+Si me equivoqué al escribir "origin" y puse "origen" o "cafe" o "caca", puedo corregir esto usando:
+
+>git remote rm caca
+
+Y esa config se va a borrar y puedo partir otra vez configurando el remoto.
 
 
 
