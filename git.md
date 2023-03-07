@@ -136,6 +136,20 @@ Para esto debo salir del branch que posee los cambios, y posicionarme en el bran
 
 ## Repositorios Remotos
 
+En GitHub, debemos crear un nuevo repositorio, y desde donde está un tab de HTTPS/SSH sacar la ruta del repo remoto, para SSH y evitar tener que meter la contraseña a cada rato. (Pre-work)
+
+Ahora, a este repo local, debo agregar la ubicación remota donde se almacenarán las cosas.
+
+Origin es una palabra clave estándar para definir el `origen remoto` de este repo remoto.
+
+>git remote add origin dirección
+
+<pre>
+>git remote add origin git@github.com:OrcaCl/el-mundo-del-markdown.git
+</pre>
+
+Ahora vamos a hacer el primer push, que es enviar al repo remoto, una copia de nuestro repo local para que tengamos las mismas cosas sincronizadas y listas para seguir trabajando en otro lugar o con otro grupo de personas.
+
 
 
 
