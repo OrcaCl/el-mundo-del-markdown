@@ -112,6 +112,28 @@ Y también se puede cambiar de rama, crear otra y cambiarse a esa nueva, con el 
 
 >git switch -c nombre-de-nueva-rama
 
+Probé un par de veces git switch main/master y se ve como un lado guarda cosas y el otro no.
+
+**Importante**
+
+Antes de dejar una rama y pensar en Merge o Rebase o cualquier otro comando raro que desconozco, es importante que los cambios sean almacenados siempre con commit. No dejar weas a medio hacer.
+
+Si quiero dejar algo almacenado temporalmente en "caché", se puede usar un comando llamado STASH, que usé en otro lado pero que probablemente otro día lo complete acá.
+
+---
+`Agregar info de STASH ACÁ`
+
+---
+
+
+**Merge Branch**
+
+Ahora, si ya probé la funcionalidad y estoy contento, debería "pegar" esas modificaciones al "universo central o master"
+
+Para esto debo salir del branch que posee los cambios, y posicionarme en el branch que va a `recibir` las modificaciones. Y de ahí se ejecuta:
+
+>git merge -nombre-del-feature-que-se-agregara-al-core
+
 
 
 
