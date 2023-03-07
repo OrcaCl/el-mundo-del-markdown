@@ -134,6 +134,8 @@ Para esto debo salir del branch que posee los cambios, y posicionarme en el bran
 
 >git merge -nombre-del-feature-que-se-agregara-al-core
 
+## Repositorios Remotos
+
 
 
 
