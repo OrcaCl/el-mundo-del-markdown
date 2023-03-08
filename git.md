@@ -18,7 +18,7 @@ Cuando se realicen los commit, éstos van a generar un HASH que irá añadido a 
 
 Fuente: [Undefined Shell](https://undefinedshell.notion.site/2-Instalar-Git-2a65a86fc7d648cb83aaeb7ef2743d8c).
 
-## Semana 2
+## Semana 1 C2
 
 Acá empezó la parte de GIT y GitHub
 
@@ -175,6 +175,25 @@ Finalmente hay que agregar a .gitignore para que no lo vuelva a subir.
 NOTA: Esto solo cambia las cosas en local. Si ya subimos el archivo al repo remoto, hay que borrarlo allá también.
 
 
+## Fork, Clone y Pull Request
 
+### Clone
 
+Clonar, es hacer una copia del repo de alguien o de ti mismo, para poder seguir con la creación e historial del mismo repositorio. Puedes hacer pulls y push, merge, crear branches etc. Pero tienes que estar dentro del grupo de usuarios autorizados para poder modificar sino no puedes hacer nada.
 
+### Fork
+
+Fork es tomar el repo de una persona, hacer una copia externa y tener la posibilidad de hacer y deshacer con la misma, agregar features nuevos, quitar cosas, dejar la escoba si quieres. Es lo opuesto a Clone.
+
+### Pull-Request
+
+El resumen de **Pull-Request** es que :
+
+_"Pull-Request" es una petición para que el 'creador original' tome en consideración los cambios o features que yo haga en mi copia externa (o fork) de su repositorio, para ser aplicados (merge) en el hilo (o universo) original del repo?_
+
+Tal cual
+
+Existen otros comandos, pero por ahora quedaremos sólo con éstos.
+
+08-03-2023 - 02:46am
+Tengo que profundizar acá para que no se me olvide, pero ahora es muy tarde
