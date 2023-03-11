@@ -193,7 +193,24 @@ _"Pull-Request" es una petición para que el 'creador original' tome en consider
 
 Tal cual
 
-Existen otros comandos, pero por ahora quedaremos sólo con éstos.
+### Error para hacer Push
 
-08-03-2023 - 02:46am
-Tengo que profundizar acá para que no se me olvide, pero ahora es muy tarde
+Hace unos días tuve problemas para hacer el primer (o segundo) PUSH. Me tiraba error de cambios. En el repo remoto habían modificaciones que no hice en local ( o algo así.) No pude recordar qué hice, pero como dijo el profe, con "rebase" se puede modificar el "historial" del repo y de los commits.
+
+Ya me acordé que sucedió. Hice git add, git commit un día y apagué sesión. Al otro día, modifiqué cosas en local, git add, git commit y ahí traté de hacer push y me hizo cortocircuito porque me quedó un commit sin push del día anterior con otras modificaciones.
+
+Hice hartos comandos que no estoy muy seguro si fue correcto hacerlos, como :
+
+>git config --global pull.rebase false
+
+Que lo sugería el alert que me salió con el error.
+
+También sugería hacer:
+>git pull / git fetch
+
+La solución, gracias a **Codernicola** fue hacer el siguiente comando:
+>git config --global pull.rebase false
+
+Con esto, git se "olvida" de tratar de discutirme con que los remotos están adelantados y los locales atrasados.
+
+
