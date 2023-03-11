@@ -92,3 +92,12 @@ Estos son mis 10 comandos más utilizados:
 ## Git y Github
 
 Master y Branches
+
+Ya moví las cosas a su respectivo archivo. (git.md) en repo de markdown
+
+<br>
+
+# Semana 1 Clase 4
+
+## Intro a CSS
+
