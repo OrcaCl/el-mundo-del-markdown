@@ -89,6 +89,6 @@ Estos son mis 10 comandos más utilizados:
 | npx | ejecutar NPX |
 | alias | listar los alias |
 
-## Semana 2
+## Git y Github
 
 Master y Branches
